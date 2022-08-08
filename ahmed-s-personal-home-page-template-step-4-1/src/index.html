@@ -24,6 +24,7 @@ Make the first test pass by adding a <header> </header>-->
         <li><a href="#photo">My first visit to the Old Trafford</a></li>
         <li><a href="#video">Old Trafford tour</a></li>
         <li><a href="#p">about the stadium</a></li>
+        <li><a href="#legends1">find out the legends of Manchester United</a></li>
        </ul>
       </nav>
       
@@ -31,12 +32,7 @@ Make the first test pass by adding a <header> </header>-->
       
       <iframe id="video" width="943" height="530" src="https://www.youtube.com/embed/UuocfhClGGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-      <div><p><h3>Manchester Uniter has maney legends throughout the ages especialy when Sir Alex Ferguson was the manegar of the club</h3> </p>
-      <p><h3>lets find out the top 10 legends in Manchester United FC</p></h3></p></div>
-      <button id="button">find out the legends of the Manchester United</button>
-      <ul id="list"></ul>
-      <script src="script.js"></script>
-      <link rel="stylesheet">
+  
 
 
       <div class="g">
@@ -65,34 +61,41 @@ Before the construction of Wembley Stadium in 1923, the FA Cup Final was hosted 
     </header>
     <footer class="c-site-footer">&copy;This artical written on 18/02/2022</footer>
 
+    <!--image carousel-->
+
 <!--image carousel-->
-
-<p>Manchester United has many legends throughout the ages, especially when Sir Alex Ferguson was the manager of the club.
-Let's find out the top 10 legends in Manchester United FC:</p>
-<span id="span"></span>
-<img id="photo" />
-<button id="next">next</button>
-<button id="previous">previous</button>
-
-<!-- adding text area -->
-
-<label for="comment">Add a comment</label>
-<textarea id="comment" cols="30" rows="10" placeholder="add a comment"></textarea>
-<button id"add_comment">submit</button>
-
-
-
-
-
-
+<div id="legends1" class="legends">
+<p><h2>Manchester United has many legends throughout the ages, especially when Sir Alex Ferguson was the manager of the club.
+  Let's find out the top 10 legends in Manchester United FC:</h2></p>
+  <span id="span"></span>
+  <img id="photo1" />
+  <button id="next">next</button>
+  <button id="previous">previous</button>
+  
+  <!-- adding text area -->
+  
+  <label for="comment">Add a comment</label>
+  <textarea id="comment" cols="20" rows="3" placeholder="add a comment"></textarea>
+  <button id"add_comment">submit</button>
+  
+  
+<script src="script.js"></script>  
+  
+  
+</div>  
+  
+  
+  
+  
   </body>
 
-<!--- All the tests are red! You have to make them green. 
+<!-- All the tests are red! You have to make them green. 
 
 Q How do you make the tests pass?
 A Meet the requirements!
 
 Make the first test pass by adding a <header> </header>-->
+
 
 
 
@@ -163,7 +166,36 @@ nav a:hover{
   background-color:pink;
 }
 
+/*legends style*/
+.legends{
+text-align: center;
+display:block;
+background-color: rgb(193, 223, 223);
+}
+#span{
+  display: block;
+  background-color: rgb(28, 26, 26);
+  color: white;
+  width: 120px;
+  margin-left: 30%;
+}
+#next{
+  display: block;
+  margin-left: 30%;
+  width: 70px;
+}
+#previous{
+  display: block;
+  margin-left: 30%;
+  width: 70px;
+ 
+}
 
+
+#comment{
+  display: block;
+  margin-left: 45%;
+}
 
 /* don't edit this */
 .jest-lite-report__status--pass {
